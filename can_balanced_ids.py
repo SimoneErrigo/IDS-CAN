@@ -329,7 +329,6 @@ def make_ids(profile):
                     candidates.pop(structure, None)
                     candidate_streak[structure] = 0
                 elif score <= weak_limit:
-                    # Piccolo scostamento normale: accettalo ed evita la cascata.
                     trusted[structure] = current.copy()
                     candidates.pop(structure, None)
                     candidate_streak[structure] = 0
